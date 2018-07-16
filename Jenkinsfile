@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('install Docker'){
       steps{
-        sh "/var/jenkins_home/run-docker/get-docker.sh"
+        sh "sudo /var/jenkins_home/run-docker/get-docker.sh"
         sh "sudo usermod -aG docker nightwing133"
         sh "sudo docker version"
 }
