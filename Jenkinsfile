@@ -6,7 +6,6 @@ pipeline{
         sh "sudo su"
         sh "cd /var/jenkins_home/run-docker"
         sh "./get-docker.sh"
-        sh "sudo docker version > money.txt"
 }
 }
     stage('Docker Build'){
