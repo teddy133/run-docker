@@ -11,7 +11,7 @@ pipeline{
 }
     stage('Docker Build'){
       steps{
-        sh "docker run --name jenkins hello-world"
+        sh "sudo docker run --name jenkins hello-world"
 }
 }
 }
