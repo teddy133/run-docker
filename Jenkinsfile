@@ -10,7 +10,14 @@ pipeline{
 }
     stage('Docker Build'){
       steps{
-        sh "sudo docker container run --name john hello-world"
+        sh "sudo su root"
+        sh "sudo docker-compose up -d"
+}
+}
+    stage('decompose'){
+      steps{
+        sh "sudo su root"
+        sh "sudo docker-compose down"
 }
 }
 }
