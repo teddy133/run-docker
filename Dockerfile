@@ -1,2 +1,2 @@
 FROM jenkins
-RUN apt-get install -y curl
+RUN sudo apt-get install -y curl
