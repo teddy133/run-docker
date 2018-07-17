@@ -10,7 +10,7 @@ pipeline{
 }
     stage('Docker Build'){
       steps{
-        sh "sudo docker build -t nightwing133/run-docker ."
+        sh "sudo docker container run --name john hello-world"
 }
 }
 }
