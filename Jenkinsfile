@@ -9,7 +9,12 @@ pipeline{
 }
     stage('Docker Build'){
       steps{
-        sh "sudo docker run --name first-try hello-world"
+        sh "sudo docker build -t nightwing133/run-docker ."
+}
+}
+    stage('Docker Push'){
+      steps{
+        sh "sudo docker push nightwing133/run-docker"
 }
 }
 }
