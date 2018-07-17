@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('install Docker'){
       steps{
-        sh "sudo su"
+        sh "sudo su root"
         sh "whoami"
         sh "cd /var/jenkins_home/run-docker"
 }
